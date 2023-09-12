@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Evolventa;
+  src: url('Evolventa-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Evolventa;
+  src: url('Evolventa-Oblique.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Evolventa;
+  src: url('Evolventa-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Evolventa;
+  src: url('Evolventa-BoldOblique.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Bebas Neue;
+  src: url('BebasNeue-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bebas Neue Cyr;
+  src: url('Bebas-Neue-Cyrillic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

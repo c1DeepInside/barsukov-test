@@ -1,0 +1,174 @@
+:root {
+  --main-color-black: #464b51;
+  --main-color-blue: #043566;
+}
+
+h1 {
+  font-size: 64px;
+  color: var(--main-color-blue);
+  font-family: 'Bebas Neue Cyr', sans-serif;
+}
+
+h2 {
+  font-size: 64px;
+  color: var(--main-color-blue);
+  font-family: 'Bebas Neue Cyr', sans-serif;
+}
+
+body {
+  font-family: 'Evolventa', sans-serif;
+  background-color: #fff;
+  color: var(--main-color-black);
+}
+
+.container {
+  width: 1240px;
+  margin: auto;
+}
+
+.logo {
+  width: 343px;
+  height: 110px;
+}
+
+.logo_link {
+  display: block;
+}
+
+.header {
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.header_nav {
+  margin-left: 38px;
+  font-family: 'Bebas Neue Cyr', sans-serif;
+}
+
+.nav_ul {
+  display: flex;
+  color: var(--main-color-blue);
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  gap: 38px;
+}
+
+.nav_ul a {
+  text-decoration: none;
+  color: var(--main-color-blue);
+}
+
+.header_tel {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-left: 57px;
+}
+
+.header_tel a {
+  font-family: 'Bebas Neue', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--main-color-blue);
+  font-weight: 400;
+}
+
+.header_insta_wrap {
+  margin-left: 57px;
+}
+
+.header_insta {
+  width: 30px;
+  height: 30px;
+}
+
+.info {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  height: 670px;
+  background: url('/assets/images/young-man-working-at-a-warehouse-with-boxes\ 1.png');
+}
+
+.info_card_wrap {
+  bottom: 76px;
+  left: -329px;
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  padding: 38px 38px 38px 330px;
+  width: 883px;
+  height: 261px;
+}
+
+.info_blue {
+  position: absolute;
+  top: 38px;
+  left: 100px;
+  display: block;
+  border-radius: 10px;
+  background: var(--main-color-blue);
+  width: 87px;
+  height: 189px;
+}
+
+.info_card_des {
+  margin-top: 10px;
+  font-size: 32px;
+  color: var(--main-color-black);
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 120%;
+}
+
+.info_about {
+  position: absolute;
+  bottom: 75px;
+  right: 56px;
+  display: flex;
+  gap: 20px;
+}
+
+.about_card {
+  padding: 12px;
+  border-radius: 10px;
+  background: #fff;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.about_card p {
+  font-family: 'Bebas Neue Cyr', sans-serif;
+  color: var(--main-color-blue);
+  font-size: 24px;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.about_card_line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: var(--main-color-blue);
+}
+
+.about_card_line::before {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  right: 0;
+  top: -4px;
+  transform: rotate(45deg);
+  background: var(--main-color-blue);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
