@@ -3,6 +3,10 @@
   --main-color-blue: #043566;
 }
 
+body {
+  min-width: 1300px;
+}
+
 h1 {
   font-size: 64px;
   color: var(--main-color-blue);
@@ -11,6 +15,24 @@ h1 {
 
 h2 {
   font-size: 64px;
+  color: var(--main-color-blue);
+  font-family: 'Bebas Neue Cyr', sans-serif;
+}
+
+h3 {
+  font-size: 55px;
+  color: var(--main-color-blue);
+  font-family: 'Bebas Neue Cyr', sans-serif;
+}
+
+h4 {
+  font-size: 48px;
+  color: var(--main-color-blue);
+  font-family: 'Bebas Neue Cyr', sans-serif;
+}
+
+h5 {
+  font-size: 26px;
   color: var(--main-color-blue);
   font-family: 'Bebas Neue Cyr', sans-serif;
 }
@@ -26,6 +48,11 @@ body {
   margin: auto;
 }
 
+main .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .logo {
   width: 343px;
   height: 110px;
@@ -36,6 +63,14 @@ body {
 }
 
 .header {
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header_wrap {
   height: 110px;
   display: flex;
   align-items: center;
@@ -46,7 +81,7 @@ body {
   font-family: 'Bebas Neue Cyr', sans-serif;
 }
 
-.nav_ul {
+.header_nav .nav_ul {
   display: flex;
   color: var(--main-color-blue);
   font-weight: 300;
@@ -55,7 +90,7 @@ body {
   gap: 38px;
 }
 
-.nav_ul a {
+.header_nav .nav_ul a {
   text-decoration: none;
   color: var(--main-color-blue);
 }
@@ -75,8 +110,12 @@ body {
   font-weight: 400;
 }
 
+.header a:hover {
+  text-decoration: underline;
+}
+
 .header_insta_wrap {
-  margin-left: 57px;
+  margin-left: 47px;
 }
 
 .header_insta {
@@ -171,4 +210,413 @@ body {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+
+.about_us {
+  margin-top: 30px;
+  padding-top: 60px;
+}
+
+.about_us_cards {
+  margin-top: 30px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about_us_card {
+  width: 563px;
+  height: 323px;
+}
+
+.about_us_card img {
+  border-radius: 5px;
+}
+
+.about_us_card p {
+  font-size: 20px;
+  padding-right: 20px;
+  line-height: 24px;
+}
+
+.about_us_card p:not(:first-child) {
+  margin-top: 20px;
+}
+
+.mission {
+  margin-top: 100px;
+  margin-bottom: 185px;
+  display: flex;
+  gap: 60px;
+}
+
+.mission_info {
+  width: 540px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.mission_info p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mission_picture {
+  position: absolute;
+  top: 120px;
+  width: 500px;
+  height: 580px;
+  pointer-events: none;
+}
+
+.mission_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 40px;
+}
+
+.mission_card {
+  width: 276px;
+  height: 230px;
+  border-radius: 5px;
+  box-shadow: 0px 1.75128px 7.00513px 0px rgba(50, 77, 104, 0.17);
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mission_card_h5_wrap {
+  padding-right: 70px;
+  height: 56px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.mission_card p {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.address {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address_info {
+  margin-top: 50px;
+  width: 357px;
+  flex-shrink: 0;
+}
+
+.address_h4 {
+  margin-top: 46px;
+}
+
+.address_des {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.why_we {
+  margin-top: 90px;
+}
+
+.why_we_cards {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px 140px;
+}
+
+.why_we_card {
+  display: flex;
+}
+
+.why_we_card_number {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why_we_card_number p {
+  position: relative;
+  z-index: 1;
+  font-size: 70px;
+  color: var(--main-color-blue);
+  font-family: 'Bebas Neue Cyr', sans-serif;
+}
+
+.why_we_ellipse {
+  position: absolute;
+  width: 120px;
+  height: 137px;
+  fill: rgba(77, 124, 172, 0.17);
+  pointer-events: none;
+}
+
+.ellipse_bot {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  fill: #dbdbdb;
+}
+
+.ellipse_left {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  fill: #dbdbdb;
+}
+
+.ellipse_top {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.why_we_card_info {
+  width: 377px;
+  margin-left: 10px;
+}
+
+.why_we_card_info p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.contacts_wrap {
+  margin-top: 100px;
+  width: 100%;
+  height: 720px;
+  background: url('/assets/images/warehouse3.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts_form_wrap {
+  top: 87px;
+  left: -293px;
+  position: absolute;
+  width: 883px;
+  height: 547px;
+  padding: 45px 0px 0px 305px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.contacts_blue {
+  background: var(--main-color-blue);
+  border-radius: 10px;
+  width: 118px;
+  height: 347px;
+  position: absolute;
+  top: 87px;
+  left: 60px;
+}
+
+.contacts_form_wrap p {
+  margin-top: 20px;
+  padding-right: 180px;
+  line-height: 24px;
+}
+
+.contacts_form {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts_form input {
+  width: 412px;
+  padding: 20px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
+  outline: none;
+  border: none;
+  color: var(--main-color-black);
+  font-family: Evolventa;
+  font-size: 17px;
+  line-height: 130%;
+}
+
+.contacts_form input::placeholder {
+  opacity: 0.7;
+}
+
+.contacts_form button {
+  width: 412px;
+  border-radius: 10px;
+  background: var(--main-color-blue);
+  padding: 20px 0 16px 0;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contacts_form button:hover {
+  opacity: 0.9;
+}
+
+.contacts_info {
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+  padding: 55px;
+  flex-direction: column;
+  position: absolute;
+  width: 455px;
+  top: 115px;
+  right: 20px;
+}
+
+.contacts_list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 32px;
+}
+
+.contact_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact_wrap_name {
+  color: var(--main-color-blue);
+  font-family: 'Bebas Neue Cyr';
+  position: relative;
+  font-size: 24px;
+}
+
+.contact_wrap_tel::before {
+  position: absolute;
+  content: url('assets/icons/phone-receiver-silhouette.svg');
+  left: -30px;
+}
+
+.contact_wrap_email::before {
+  position: absolute;
+  content: url('assets/icons/mail.svg');
+  left: -30px;
+}
+
+.contact_wrap_address::before {
+  position: absolute;
+  content: url('assets/icons/maps-and-flags.svg');
+  left: -30px;
+}
+
+.contact_wrap a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--main-color-black);
+}
+
+.contact_wrap a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: var(--main-color-blue);
+  color: #fff;
+}
+
+.footer_wrap {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer_nav .nav_ul {
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer_nav .nav_ul a {
+  font-family: 'Bebas Neue Cyr', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_nav .nav_ul a:hover {
+  opacity: 0.7;
+}
+
+.footer_info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer h4 {
+  color: #fff;
+}
+
+.footer_info p {
+  font-size: 24px;
+  text-align: center;
+  width: 386px;
+}
+
+.footer .contact_wrap_name {
+  color: #fff;
+}
+
+.footer_contacts_list {
+  padding-left: 32px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.footer .contact_wrap_tel::before {
+  position: absolute;
+  content: url('assets/icons/phone-receiver-silhouette-white.svg');
+  left: -30px;
+}
+
+.footer .contact_wrap_email::before {
+  position: absolute;
+  content: url('assets/icons/mail-white.svg');
+  left: -30px;
+}
+
+.footer .contact_wrap a {
+  color: #fff;
 }
