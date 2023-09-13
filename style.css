@@ -215,6 +215,7 @@ main .container {
 .about_us {
   margin-top: 30px;
   padding-top: 60px;
+  background: url('/assets/images/back-triangls.png');
 }
 
 .about_us_cards {
